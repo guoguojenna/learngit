@@ -15,4 +15,13 @@
 
 2. Branch
 	1)
-		git checkout -b dev
+	 git checkout -b dev # git branch dev; git checkout dev. Create a branch, then checkout to this branch
+	 git branch  # list the branches
+	 vim git_path.man 
+	 git add git_path.man 
+	 git commit -m 'Creating a new branch is quick.'
+	 git checkout master 
+	 git merge dev # merge branch dev to master
+	 git branch -d dev # delete a branch
+	 git branch
+	
