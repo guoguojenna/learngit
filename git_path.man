@@ -1,0 +1,18 @@
+# Man page for git
+
+1. Remote Repo
+	1) Connect local repo to the remote one
+		mkdir learngit
+		cd learngit
+		ls
+		echo "# learngit" >> README.md
+		git init 
+		git add README.md 
+		git commit -m "Initial commit"
+		git branch 
+		git remote add origin https://github.com/guoguojenna/learngit.git
+		git push -u origin master #Use -u for the first time, and need git push origin master(without -u) in the future
+
+2. Branch
+	1)
+		git checkout -b dev
