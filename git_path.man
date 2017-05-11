@@ -24,4 +24,30 @@
 	 git merge dev # merge branch dev to master
 	 git branch -d dev # delete a branch
 	 git branch
-	
+	2) resolve conflict
+	 git checkout -b feature1
+	 vim README.md 
+	 git add README.md 
+	 git commit -m "AND simple"
+	 git checkout master
+	 git status
+	 vim README.md 
+	 git add README.md 
+	 git commit -m "& simple"
+	 git merge feature1
+	 git status
+	 git diff
+	 vim README.md # resolve the conflict manually
+	 git add README.md 
+	 git commit -m "conflict fixed"
+	 git log --graph
+	 git branch -d feature1 
+	 
+	3) git merge --no-ff 
+	 git checkout -b dev
+ 	 vim README.md 
+ 	 git add README.md 
+ 	 git commit -m "add merge"
+ 	 git checkout master 
+ 	 git merge --no-ff -m "merge with no-ff" dev
+ 	 git log --graph
