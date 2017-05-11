@@ -80,3 +80,8 @@
 	git tag -d v0.9
 	git push orgin :refs/tags/v0.9 #delete tag lacally, the delete remotely
 
+4. git config
+	1) git config 
+	git config --global user.name
+	git config --global user.email zguo@redhat.com
+	git config --global color.ui true
