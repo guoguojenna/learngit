@@ -85,3 +85,10 @@
 	git config --global user.name
 	git config --global user.email zguo@redhat.com
 	git config --global color.ui true
+	git config --global alias.st status
+
+	.git/config
+	.gitconfig
+
+5. git doc
+	1) Offical website: http://git-scm.com/
