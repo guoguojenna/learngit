@@ -54,3 +54,29 @@
 	
 	4) git stash
 	 use git stash to store current working, after other work, git stash list, then git stash pop to go back to the last working place
+	5) delete a branch
+	git branch -D <branch name>, delete a branch forcely
+	git branch -d <branch name>, delete a branch
+
+	6) 
+	git remote -v # check remote repo info
+	git push origin branch-name, if failed, use git pull to fetch romte new changes
+ 	git checkout -b branch-name origin/branch-name # create a branch
+	git branch --set-upstream branch-name origin/branch-name
+	git pull, if fail, resolve the conflict first
+
+3. tag
+	1) tag
+	git tag <name> # create a tag
+	git tag -a <tagname> -m "description of this tag"
+	git tag -s <tagname> -m "description of this tag"
+	git tag # show all the tags
+	git log --pretty=oneline --abbrev-commit
+	git tag v0.9 30b5905 # create a tag on certain commit
+	git tag -d v0.1
+	git push origin v1.0
+	git push orgin --tags
+	
+	git tag -d v0.9
+	git push orgin :refs/tags/v0.9 #delete tag lacally, the delete remotely
+
